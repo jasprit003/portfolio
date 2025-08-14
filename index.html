@@ -1,0 +1,215 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h3 class="logo">Portfolio</h3>
+      <nav class="navigation-links" id="navigation-links__mobile">
+        <ul role="list">
+          <li id="nav-link"><a href="#home">Home</a></li>
+          <li id="nav-link"><a href="#about">About</a></li>
+          <li id="nav-link"><a href="#projects">Projects</a>
+          </li>
+          <li id="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-group__header">
+        <button class="btn theme-btn hover-effect" id="theme-toggle">
+          Dark
+        </button>
+        <button class="btn menu-btn hover-effect" id="toggle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu">
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+            <path d="M4 6h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home">
+        <h1>Hi, my name is <span>Jaspreet Singh.</span></h1>
+        <p>A creative design engneer with an eye for design</p>
+
+        <div class="btn-group__hero">
+          <div class="btn btn-primary">View My Portfolio</div>
+          <div class="btn btn-secondary">Let's Connect</div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="about-heading">
+          <h3>About Me</h3>
+        </div>
+        <div class="about-container">
+          <div class="content">
+            <div class="content-desc">
+              <p>
+                I’m a Computer Science graduate turned web developer who’s dedicated
+                to crafting beautiful, performant, and accessible digital
+                experiences.
+              <p>
+                My toolkit of choice includes React and Next.js—which
+                allow me to combine cutting-edge front-end architecture with
+                server-side rendering, static site generation, and API integration
+              </p>
+              </p>
+            </div>
+            <div class="skill-section">
+              <h4 class="skill-title">Tech Stack</h4>
+              <div class="skillset-grid">
+                <p class="skill">React</p>
+                <p class="skill">Next</p>
+                <p class="skill">Node.js</p>
+                <p class="skill">Pyhton</p>
+                <p class="skill">Tailwindcss</p>
+                <p class="skill">Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="image-section">
+            <article class="dev-image-container">
+              <img class="dev-image" id="dev-image" src="assets/me.jpg" alt="Developer Profile Picture" />
+              <div class="dev-image__backdrop"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+
+      <section class="projects" id="projects">
+        <div class="projects-grid">
+
+          <!-- 1. Todo App -->
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/todo_app-cover.png" alt="Todo App cover">
+            </div>
+            <div class="card-content">
+              <h4>Todo App</h4>
+              <p class="project-desc">
+                Built a responsive to‑do list app with HTML, CSS, and JavaScript.
+                Users can add tasks, mark them done, edit entries, and delete items.
+                All data persists in localStorage so your list stays intact across sessions.
+              </p>
+              <div class="tech-icons">
+                <span class="icon">
+                  <img src="assets/icons/html5.svg" alt="HTML5 icon">
+                </span>
+                <span class="icon">
+                  <img src="assets/icons/css3.svg" alt="CSS3 icon">
+                </span>
+                <span class="icon">
+                  <img src="assets/icons/javascript.svg" alt="JavaScript icon">
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Weather App -->
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/weather_app-cover.png" alt="Weather App cover">
+            </div>
+            <div class="card-content">
+              <h4>Weather App</h4>
+              <p class="project-desc">
+                A dynamic weather dashboard built with HTML, CSS, and JavaScript.
+                Fetches live data from the OpenWeatherMap API to display current conditions,
+                5-day forecasts, and weather icons.
+              </p>
+              <div class="tech-icons">
+                <span class="icon">
+                  <img src="assets/icons/html5.svg" alt="HTML5 icon">
+                </span>
+                <span class="icon">
+                  <img src="assets/icons/css3.svg" alt="CSS3 icon">
+                </span>
+                <span class="icon">
+                  <img src="assets/icons/javascript.svg" alt="JavaScript icon">
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Login System -->
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/login-cover.png" alt="Login System cover">
+            </div>
+            <div class="card-content">
+              <h4>Login System</h4>
+              <p class="project-desc">
+                A secure login interface with form validation and localStorage support.
+                Users can register, login, and maintain session data across page reloads.
+              </p>
+              <div class="tech-icons">
+                <span class="icon">
+                  <img src="assets/icons/html5.svg" alt="HTML5 icon">
+                </span>
+                <span class="icon">
+                  <img src="assets/icons/css3.svg" alt="CSS3 icon">
+                </span>
+                <span class="icon">
+                  <img src="assets/icons/javascript.svg" alt="JavaScript icon">
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h3 class="contact-heading">Let’s Connect 👋</h3>
+
+        <form id="contact-form" class="form">
+          <div class="form-element">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" />
+          </div>
+
+          <div class="form-element">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" />
+          </div>
+
+          <div class="form-element">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+
+        <div id="contact-feedback" class="feedback hidden">
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>Made with ❤️ by <a href="https://github.com/jasprit003" target="_blank" rel="noopener">Jasprit Singh</a></p>
+    </footer>
+
+  </body>
+
+  </html>
